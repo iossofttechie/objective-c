@@ -1,0 +1,11 @@
+-(long)findDifference:(NSInteger)totalNumber{
+    long sumOfTheSquares = 0;
+    long squareOftheSum = 0;
+    for (int number = 1; number<=totalNumber; number++){
+        sumOfTheSquares += number * number;
+        squareOftheSum += number;
+    }
+    squareOftheSum *= squareOftheSum;
+    return squareOftheSum - sumOfTheSquares;
+    
+}
